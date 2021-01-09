@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 let connectionString =
-	'mongodb+srv://kunaguero:mancity10@cluster0.zeuul.mongodb.net/HabitApp?retryWrites=true&w=majority';
+	'ConnectionString_PlaceHolder';
 
 mongodb.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true }, function(err, client) {
 	db = client.db();
